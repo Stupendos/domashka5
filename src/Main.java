@@ -22,12 +22,11 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
         //Задача 3
-        int year = 1876;
-        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+        int year = 1584;
+        if (year <= 1584) {
+            System.out.println("Год должен быть больше, чем 1584");
+        } else if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
             System.out.println(year + " год является високосным.");
-            if (year < 1584) {
-                System.out.println("Год должен быть больше, чем 1584");
-            }
         } else {
             System.out.println(year + " год не является високосным");
         }
